@@ -1,0 +1,38 @@
+body {
+    background-color: darkblue;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    perspective:400px;
+    img {
+        width:100%;
+
+    }
+
+}
+main {
+    margin-top:20vh;
+
+    width:70 vw;
+    height:80 vh;
+    position: absolute;
+    transform-origin:50% 100%;
+    animation:Crawler 10s linear infinite;
+    rotateX: 30deg;
+
+    
+@keyframes Crawler {
+    from {
+        top 0;
+        transform:translateZ (0);
+        rotate rotateX (30deg);
+        to {
+            top:-7500px; transform: translateZ(-2500px);
+            rotateX (30deg);
+            
+        }
+}
+
+}
+}
